@@ -1,5 +1,4 @@
-from typing import Dict
-from typing import List
+from typing import Dict, List, Optional
 from typing_extensions import TypedDict
 
 
@@ -16,13 +15,14 @@ class ResearchState(TypedDict):
     draft_report: str
     revision_count: int
 
-    fact_check_report: str
+    claims: List[str]                        # was missing
+    claim_verdicts: Dict[str, str]           # was missing
+    fact_check_report: str                   # was duplicated — now once
     fact_check_passed: bool
-    
-    claims: List[str]
-    fact_check_report: str
 
     approved: bool
     human_feedback: str
+
+    rejection_count: int 
 
     final_report: str
