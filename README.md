@@ -101,7 +101,7 @@ orchestrator ──► research ──► analyzer ──► writer ──► fa
 1. **Clone the project** and move into it:
 
    ```bash
-   git clone https://github.com/ishika-bhad/multi-agent-research-system
+   git clone https://github.com/ishika-bhad/multi-agent-research-system.git
    cd multi-agent-research-system
    ```
 
